@@ -1,0 +1,28 @@
+{
+  "name": "p-language-support",
+  "displayName": "P language support",
+  "description": "Syntax hightlighting for the P language",
+  "version": "0.0.1",
+  "repository": {
+    "url": "https://github.com/Damacustas/p-language-support"
+  },
+  "engines": {
+    "vscode": "^1.71.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "p",
+      "aliases": ["P", "p"],
+      "extensions": [".p"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "p",
+      "scopeName": "source.p",
+      "path": "./syntaxes/p.tmLanguage.json"
+    }]
+  }
+}
